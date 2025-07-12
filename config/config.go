@@ -31,7 +31,6 @@ func InitEnv() {
 }
 
 func InitDB() {
-	InitEnv()
 
 	dsn := fmt.Sprintf("%s:%s@tcp(%s:%s)/%s?charset=utf8mb4&parseTime=True&loc=Local",
 		os.Getenv("DB_USER"),
